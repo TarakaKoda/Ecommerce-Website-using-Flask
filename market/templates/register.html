@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}
+Register Page
+{% endblock %}
+
+{% block content %}
+<body class="text-center">
+    <div class="container">
+        <form method="POST" class="form-register" style="color:white">
+            {{ form.hidden_tag() }}
+            <img class="mb-4" src="https://lh3.googleusercontent.com/snGiXJ8yKmJCeG0ylz8U9Z5U1rXfbNN0qc_Zd2En4yuQVUJieZLNIrYOy12-KgEbwQ2hva7_A6NkGJTXZDr8diPu4zxF2ZpRmMhZ0DwT_YM1wvakapi9MMnRrIUfzjpNa_SJpxUac_y0k66xAI71JqeMx-P2_Q2hIPRK5F1vxYjJd5jGVq80C0TPfMkLzy30J4eMaDH_trM_BW26PFpIOmlRGvBUkytWaLdPr_3HV7e6RUoYMXFQwbVPT9A8u4-elLLftj7wpWpG27L9l9YvKSdLzINByBUn6fnuOUbvyKcbG6AmUyL8tvKugniS8fbiIMC4NqMi9IX73ercCDZ9xemq4ZBr2FuOunOcOu1BJDb_4HR9GISdsaUaCgMv8l6ekSiVfWWwmqa-UvcCtUJHIDF6s-lsaHE3wf27-Qm7Tj4CMKctMC-gyNQMyWv6jytm7_vzqPa15hfZQasHsgfBT9C08z9alDBwykvm5yXCicFTAcr_qkvJRUkyPgAN1VrbfXsZIx4g_FwReu0Q-WBP9FD8FLWuSNOTC6ccr-CwP_Cmn2AjYoc-tIt477tdF-DGUODYEivZ4a94mYPgCRpNVDjnkDLbxW1GFnmlW5LIJ-wvGZY5HaMOoZgttdjrJyxOddNj_1oTA2tyB2mCmr0hMMG8sf2b_v2lSv6k-0WVrvHScJb_9PbgaDXkCJWuoAo10EmzpipumhpeaoRFSNXGYmoqZYQF1xYUMgZyDz2BmIThTEBsooQYe1H4nSjJ7OO7dtMwVzUtHLjZTXv6s2P-b6t6-f9uTY7B-hB2hfMGAvIJoAKd9zYNkTxxgcnBhQdj005Mrycsb_p_RAzYFNG-9_GA1HlqV7SZhcGjGHujp8_aKVV9XMk-vLUOjwa5Q0MDgJUTs20KQAtPiZa_bS-mlY6SmfvEH2g80t6e=w250-h250-s-no?authuser=0" alt="">
+            <h1 class="h3 mb-3 font-weight-normal">
+                Please Create your Account
+            </h1>
+            <br>
+            {{ form.username.label() }}
+            {{ form.username(class="form-control", placeholder="User Name") }}
+
+            {{ form.email_address.label() }}
+            {{ form.email_address(class="form-control", placeholder="Email Address") }}
+
+            {{ form.password1.label() }}
+            {{ form.password1(class="form-control", placeholder="Password") }}
+
+            {{ form.password2.label() }}
+            {{ form.password2(class="form-control", placeholder="Confirm Password") }}
+
+            <br>
+
+            {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+
+        </form>
+    </div>
+</body>
+{% endblock %}
