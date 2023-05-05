@@ -1,4 +1,16 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% block title %}
+    Welcome to Taraka's Market
+{% endblock %}
 {% block content %}
-    This is our content for the Home Page
-{% endblock content %}
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark" style="color:white">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <img class="mb-4" style="position: relative; top: -140px" src="https://lh3.googleusercontent.com/snGiXJ8yKmJCeG0ylz8U9Z5U1rXfbNN0qc_Zd2En4yuQVUJieZLNIrYOy12-KgEbwQ2hva7_A6NkGJTXZDr8diPu4zxF2ZpRmMhZ0DwT_YM1wvakapi9MMnRrIUfzjpNa_SJpxUac_y0k66xAI71JqeMx-P2_Q2hIPRK5F1vxYjJd5jGVq80C0TPfMkLzy30J4eMaDH_trM_BW26PFpIOmlRGvBUkytWaLdPr_3HV7e6RUoYMXFQwbVPT9A8u4-elLLftj7wpWpG27L9l9YvKSdLzINByBUn6fnuOUbvyKcbG6AmUyL8tvKugniS8fbiIMC4NqMi9IX73ercCDZ9xemq4ZBr2FuOunOcOu1BJDb_4HR9GISdsaUaCgMv8l6ekSiVfWWwmqa-UvcCtUJHIDF6s-lsaHE3wf27-Qm7Tj4CMKctMC-gyNQMyWv6jytm7_vzqPa15hfZQasHsgfBT9C08z9alDBwykvm5yXCicFTAcr_qkvJRUkyPgAN1VrbfXsZIx4g_FwReu0Q-WBP9FD8FLWuSNOTC6ccr-CwP_Cmn2AjYoc-tIt477tdF-DGUODYEivZ4a94mYPgCRpNVDjnkDLbxW1GFnmlW5LIJ-wvGZY5HaMOoZgttdjrJyxOddNj_1oTA2tyB2mCmr0hMMG8sf2b_v2lSv6k-0WVrvHScJb_9PbgaDXkCJWuoAo10EmzpipumhpeaoRFSNXGYmoqZYQF1xYUMgZyDz2BmIThTEBsooQYe1H4nSjJ7OO7dtMwVzUtHLjZTXv6s2P-b6t6-f9uTY7B-hB2hfMGAvIJoAKd9zYNkTxxgcnBhQdj005Mrycsb_p_RAzYFNG-9_GA1HlqV7SZhcGjGHujp8_aKVV9XMk-vLUOjwa5Q0MDgJUTs20KQAtPiZa_bS-mlY6SmfvEH2g80t6e=w250-h250-s-no?authuser=0" alt="">
+            <h1 class="display-4 font-weight-normal" style="position: relative; top: -150px">Taraka's Market</h1>
+            <p class="lead font-weight-normal" style="position: relative; top: -150px">Start purchasing products by clicking the link below</p>
+            <a class="btn btn-primary" style="position: relative; top: -150px" href="{{ url_for('market_page') }}">Get Started</a>
+        </div>
+        <div class="product-device box-shadow d-none d-md-block"></div>
+        <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+    </div>
+{% endblock %}
